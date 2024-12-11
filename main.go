@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/webgoprojects/controllers"
-	"github.com/webgoprojects/middleware"
+	"github.com/webgoprojects/go-gin-template/controllers"
+	"github.com/webgoprojects/go-gin-template/middleware"
 )
 
 func main() {
