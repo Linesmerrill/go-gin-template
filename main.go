@@ -9,6 +9,9 @@ import (
 func main() {
 	r := gin.Default()
 
+	// Set trusted proxies
+	_ = r.SetTrustedProxies([]string{"192.168.0.1"})
+
 	// Middleware
 	r.Use(middleware.Logger())
 
