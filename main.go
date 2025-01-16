@@ -4,6 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/webgoprojects/go-gin-template/controllers"
 	"github.com/webgoprojects/go-gin-template/middleware"
+	"log"
 )
 
 func main() {
@@ -23,5 +24,6 @@ func main() {
 	r.Static("/static", "./static")
 
 	// Start the server
+	log.Println("Starting server on :8080")
 	r.Run(":8080")
 }
